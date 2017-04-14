@@ -243,6 +243,11 @@ span{
 	margin: 20px 0px 50px 50px;
 }
 
+#total{
+	text-align: right;
+	margin-bottom: 50px;
+	margin-right: 100px;
+}
 #product{
 	width: 60%;
 	border-right-style: double;
