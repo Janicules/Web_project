@@ -1,0 +1,123 @@
+/* Template to initiate a CSS file (from line 2 to 43) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Properties of the body : he'll perfectly frame the elements */
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 1.3rem;
+	font-family: arial,ssans,sans-serif;
+	background-image: url("../Images/bde.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Properties of the header */
+header{
+	/* The height is set to 50 px */
+	height: 50px;
+	/* the background color is red */
+	background-color: #c2242a;
+}
+/* Properties of the id "logout" */
+#logout{
+	/* Set a margin on the right to 30 px */
+	margin-right: 30px;
+}
+/* Properties of the id "logo" */
+#logo{
+	/* Set the width to 150 px */
+	width: 150px;
+	/* Set the height to 100 px */
+	height: 100px;
+	/* Put the element on the left */
+	float: left;
+	margin-top: 50px;
+}
+#twitter{
+	width: 40px;
+	height: 30px;
+	margin-top: 10px;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 50px;
+}
+#PP{
+	width: 100px;
+	height: 100px;
+}
+aside{
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+#cart{
+	width: 50px;
+	height: 50px;
+}
+.vertical{
+	width: 30px;
+	height: 20px;
+}
+nav{
+	text-align: center;
+	margin-top: 100px;
+}
+article{
+	text-align: center;
+	margin-top: 50px;
+	height: 400px;
+}
+.button2{
+	float: right;
+	margin-right: 25%;
+}
+footer{
+	text-align: center;
+	margin-top: 80px;
+}
+.links{
+	margin-left: 50px;
+}
