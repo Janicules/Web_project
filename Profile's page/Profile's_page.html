@@ -2,61 +2,52 @@
 <!DOCTYPE html>
 <!-- Opening the HTML markup -->
 <html>
-	<!-- Metadata page  -->
+
+    <!-- Metadata page  -->
     <head>
-    	<!-- Definition of character used -->
+        <!-- Definition of character used -->
         <meta charset="utf-8" />
         <!-- Add a title to the page -->
         <title>BDE CESI</title>
         <!-- Bond the HTML page to a CSS page -->
-		<link rel="stylesheet" href="Profile's_page.css" />
-	<!-- End of the metadata page  -->
+        <link rel="stylesheet" href="Profile's_page.css" />
+        <!-- Bond the HTML page to a CSS page which allow to put icon in front of Facebook, Twitter,  YouTube and Cart -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- End of the metadata page  -->
     </head>
 
-<!-- Creation of the corpse of the page -->
     <body>
-        <!-- Header of the page -->
-        <header>
-        	<!-- CESI Logo -->
-    	    <img id="logo" src="../Images/logo.png" alt="Logo of Exia CESI">
-    	    <!-- Facebook logo -->
-    	    <a href=""><img class="logo" src="../Images/facebook.png" alt="Logo of Facebook"></a>
-    	    <!-- Twitter logo -->
-    	    <a href=""><img class="logo" id="twitter" src="../Images/twitter.png" alt="Logo of Twitter"></a>
-    	    <!-- YouTube logo -->
-    	    <a href=""><img class="logo" src="../Images/youtube.png" alt="Logo of YouTube"></a>
-    	<!-- End of the header -->
-    	</header>
 
-    	<!-- Add an aside element -->
-        <aside>
-        	<!-- A button to log out -->
-        	<a href=""><button id="logout" class="button" type="button">Log out</button></a>
-        	<!-- A link to go to our cart -->
-        	<a href="">Cart</a>
-        	<!-- Cart logo -->
-        	<img id="cart" src="../Images/cart.png" alt="Cart icon">
-        <!-- End of the aside element -->
-        </aside>
+        <header id="header">
+            <!-- Create a block of elements -->
+            <div id="red_bar">
 
-        <!-- Add a navigation element -->
-    	<nav> 
-            <!-- Link to the Gallery -->
-    		<a href="">Gallery</a>
-            <!-- Image to put an horizontal element to separate each link -->
-    		<img class="vertical" src="../Images/vertical.png" alt="Vertical bar">
-            <!-- Link to the Schedule -->
-    		<a href="">Schedule</a>
-            <!-- Image to put an horizontal element to separate each link -->
-    		<img class="vertical" src="../Images/vertical.png" alt="Vertical bar">
-            <!-- Link to the Shop -->
-    		<a href="">Shop</a>
-            <!-- Image to put an horizontal element to separate each link -->
-    		<img class="vertical" src="../Images/vertical.png" alt="Vertical bar">
-            <!-- Link to Pinned pictures -->
-    		<a href="">Pinned pictures</a>
-        <!-- End of the navigation element -->
-    	</nav>
+                    <img src="../Images/logo.png" alt="Logo of Exia CESI">
+
+                    <nav>
+                        <!-- Links with same properties thanks to the attribute "class" -->
+                        <a href="" class="selected">Gallery</a>
+                        <a href="" class="selected">Schedule</a>
+                        <a href="" class="selected">Shop</a>
+                        <a href="" class="selected">Pinned Pictures</a>
+                    </nav>
+
+                    <a href="" class="log">Logout</a>
+                    <a href="" class="log">Your Account</a>
+
+            </div>
+
+            <div id="white_bar">
+                    <nav>
+                        <a href=""><i class="fa fa-facebook-square"></i>&nbsp Facebook</a>
+                        <a href=""><i class="fa fa-twitter-square"></i>&nbsp Twitter</a>
+                        <a href=""><i class="fa fa-youtube-square"></i>&nbsp Youtube</a>
+                        <a href=""><i class="fa fa-shopping-cart"></i>&nbsp Cart</a>
+                    </nav>
+
+            </div>
+
+        </header>
         
 
         <!-- Add an article -->
