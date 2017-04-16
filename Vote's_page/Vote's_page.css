@@ -162,7 +162,7 @@ body{
 
 footer{
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 70px;
 }
 
 .links{
@@ -188,30 +188,96 @@ footer{
 	#white_bar nav{
 		font-size:14px;
 	}
+
+	#logout{
+		margin-top: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 812px */
+@media all and (max-width: 812px) {
+	#logout{
+		margin-top: 40px;
+	}
+
 	#red_bar{
 		height: 100px;
 	}
-
 }
-/* Responsive if the window's width is below 600px */
-@media all and (max-width: 600px) {
 
+/* Responsive if the window's width is below 693px */
+@media all and (max-width: 693px) {
+	#logout{
+		margin-top: 40px;
+	}
+}
+
+/* Responsive if the window's width is below 676px */
+@media all and (max-width: 676px) {
+	#logout{
+		margin-top: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 599px */
+@media all and (max-width: 599px) {
 	#red_bar{
 		padding:20px 0;
+		height: 126px;
 	}
 
-	#red_bar h1 {
-		float: none;
-		margin: -8px 0 2px;
-		text-align: center;
-		font-size: 24px;
-		line-height: 1;
+	body{
+		font-size: 1rem;
 	}
 
-	#red_bar nav {
-		margin: 0;
-		float: none;
-		font-size:13px;
+	#header img{
+		float: right;
+	}
+
+	#red_bar nav{
+		margin-left: 40px;
+		padding-top: 26px;
+	}
+
+	#logout{
+		margin-top: 66px;
+		margin-right: -90px;
+	}
+
+	footer{
+		margin-top: 50px;
+	}
+
+	#submit{
+		font-size: 13px;
+	}
+}
+
+/* Responsive if the window's width is below 504px */
+@media all and (max-width: 504px) {
+	#red_bar nav{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#logout{
+		margin-top: 19px;
+		margin-right: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 486px */
+@media all and (max-width: 486px) {
+	body{
+		font-size: 10px;
+	}
+
+	#red_bar{
+		height: 126px;
+	}
+
+	#header img{
+		float: right;
 	}
 
 	.selected {
@@ -219,24 +285,97 @@ footer{
 	}
 
 	#white_bar{
-		padding: 20px 0;
-	}
-
-	#white_bar h2{
-		float:none;
-		margin: 0 0 12px;
+		padding: 20px 0px 0px 0px;
+		height: 50px;
 	}
 
 	#white_bar nav{
 		text-align: center;
 	}
 
+	#logout{
+		margin-top: 66px;
+		margin-right: -80px;
+	}
+
+	#red_bar nav {
+		margin: 0;
+		font-size: 10px;
+		margin-top: 0px;
+	}
+
+	.log{
+		font-size: 10px;
+		margin-top: 0px;
+	}
+
 	#white_bar nav a{
-		display: block;
+		display: inline;
 		padding: 8px;
+		font-size: 10px;
+	}
+
+	footer{
+		margin-top: 60px;
+	}
+
+	.links{
+		margin-left: 20px;
 	}
 
 	.fa{
 		margin-left:0;
+	}
+
+	#submit{
+		font-size: 10px;
+	}
+}
+
+/* Responsive if the window's width is below 403px */
+@media all and (max-width: 403px) {
+	#logout{
+		margin-right: 0px;
+		margin-top: 19px;
+	}
+}
+
+/* Responsive if the window's width is below 395px */
+@media all and (max-width: 395.5px) {
+	#red_bar{
+		height: 148px;
+	}
+
+	#red_bar nav{
+		padding-top: 48px;
+	}
+
+	#logout{
+		margin-top: 41px;
+	}
+
+	.log{
+		margin-top: 1px;
+	}
+}
+
+/* Responsive if the window's width is below 383px */
+@media all and (max-width: 383px) {
+	#logout{
+		margin-top: 41px;
+	}
+}
+
+/* Responsive if the window's width is below 379px */
+@media all and (max-width: 379px) {
+	#red_bar nav{
+		padding-top: 1px;
+	}
+}
+
+/* Responsive if the window's width is below 366px */
+@media all and (max-width: 366px) {
+	#logout{
+		margin-top: 1px;
 	}
 }

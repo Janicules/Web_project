@@ -1,5 +1,6 @@
 /* Template to initiate a CSS file (from line 2 to 43) */
-html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -48,8 +49,7 @@ body{
 	font-family: arial,ssans,sans-serif;
 	background-image: url("../Images/bde.png");
 	background-repeat: no-repeat;
-	background-position: top;
-	overflow-x: hidden;
+	background-position: center;
 }
 
 #header{
@@ -163,88 +163,18 @@ body{
 
 footer{
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 40px;
 }
-
 .links{
 	margin-left: 50px;
 }
 
-h1{
+#calendar{
 	text-align: center;
 }
 
-#button{
-	margin-bottom: 20px;
-	margin-left: 20px;
-}
-
-#price{
-	margin-left: 5%;
-}
-
-#name{
-	float:left;
-	margin-left: 10px;
-}
-
-#name2{
-	float: left;
-	margin-left: 20px;
-}
-
-#date{
-	float: left;
-	margin-top: -22px;
-	margin-left: 530px;
-}
-
-#date2{
-	float: left;
-	margin-left: 350px;
-	margin-top: -22px;
-}
-
-#time{
-	float: left;
-	margin-top: -42px;
-	margin-left: 930px;
-}
-
-#time2{
-	float: left;
-	margin-top: -42px;
-	margin-left: 750px;
-}
-
-#price{
-	float: left;
-	margin-top: -63px;
-	margin-left: 1150px;
-}
-#submit{
-	margin: 50px 50%;
-}
-
-/* Responsive if the window's width is below 1400px */
-@media all and (max-width: 1400px) {
-	#price{
-		margin-top: 28px;
-		margin-left: 40px;
-	}
-}
-
-/* Responsive if the window's width is below 1100px */
-@media all and (max-width: 1100px) {
-	#time{
-		margin-top: 50px;
-		margin-left: 10px;
-	}
-
-	#time2{
-		margin-top: 50px;
-		margin-left: 20px;
-	}
+.button{
+	margin-top: 20px;
 }
 
 /* Responsive if the window's width is below 829px */
@@ -263,57 +193,8 @@ h1{
 
 }
 
-/* Responsive if the window's width is below 728px */
-@media all and (max-width: 728px) {
-	#name{
-		float: inherit;
-		margin-top: 10px;
-	}
-
-	#name2{
-		float: inherit;
-		margin-left: 30%;
-		margin-top: 0px;
-	}
-
-	#date{
-		float: inherit;
-		margin: 50px 0 0 0;
-	}
-
-	#date2{
-		float: inherit;
-		margin-left: 30%;
-		margin-top: 0px;
-	}
-
-	#time{
-		float: inherit;
-		margin-top: 50px;
-	}
-
-	#time2{
-		float: inherit;
-		margin-left: 30%;
-		margin-top: 0px;
-	}
-
-	#price{
-		float: inherit;
-		margin-left: 50%;
-		margin-top: 50px;
-	}
-}
-
 /* Responsive if the window's width is below 693px */
 @media all and (max-width: 693px) {
-	#logout{
-		margin-top: 0px;
-	}
-}
-
-/* Responsive if the window's width is below 676px */
-@media all and (max-width: 676px) {
 	#logout{
 		margin-top: 0px;
 	}
@@ -342,22 +223,6 @@ h1{
 	#logout{
 		margin-top: 66px;
 		margin-right: -90px;
-	}
-
-	#button{
-		font-size: 13px;
-	}
-
-	#price{
-		font-size: 13px;
-	}
-
-	#submit{
-		font-size: 13px;
-	}
-
-	footer{
-		margin-top: 50px;
 	}
 }
 
@@ -423,12 +288,8 @@ h1{
 		font-size: 10px;
 	}
 
-	form{
-		height: 350px;
-	}
-
 	footer{
-		margin-top: 0px;
+		margin-top: 20px;
 	}
 
 	.links{
@@ -439,17 +300,13 @@ h1{
 		margin-left:0;
 	}
 
-	#button{
-		font-size: 10px;
+	#calendar img{
+		width: 300px;
+		height: 300px;
 	}
 
-	#price{
+	button{
 		font-size: 10px;
-	}
-
-	#submit{
-		font-size: 10px;
-		margin: 0 auto 10 auto;
 	}
 }
 
@@ -468,7 +325,7 @@ h1{
 	}
 
 	#red_bar nav{
-		padding-top: 0px;
+		padding-top: 47px;
 	}
 
 	#logout{
@@ -480,30 +337,10 @@ h1{
 	}
 }
 
-/* Responsive if the window's width is below 383px */
-@media all and (max-width: 383px) {
-	#logout{
-		margin-top: 1px;
-	}
-
-	#name2{
-		margin-left: 10%;
-	}
-
-	#date2{
-		margin-left: 10%;
-	}
-
-	#time2{
-		margin-left: 10%;
-	}
-
-	#price{
-		margin-left: 45%;
-	}
-
-	#submit{
-		margin-left: 45%;
+/* Responsive if the window's width is below 379px */
+@media all and (max-width: 379px) {
+	#red_bar nav{
+		padding-top: 0px;
 	}
 }
 

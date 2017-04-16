@@ -10,7 +10,7 @@
         <!-- Add a title to the page -->
         <title>BDE CESI</title>
         <!-- Bond the HTML page to a CSS page -->
-        <link rel="stylesheet" href="Vote's_page.css" />
+        <link rel="stylesheet" href="Agenda's_page.css" />
         <!-- Bond the HTML page to a CSS page which allow to put icon in front of Facebook, Twitter,  YouTube and Cart -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- End of the metadata page  -->
@@ -47,42 +47,10 @@
             </div>
         </header>
 
-		<!-- Create a block of elements -->
-		<div id="vote">
-			<!-- Add a "big" paragraph like the title 1 in World -->
-			<h1 id="title">Vote for an activity</h1>
-			<!-- Create a form to ask to the user for what activity he wants to vote -->
-			<form id="form">
-				<!-- Label for the name of the activity -->
-				<label  for="name">Choose an activity</label>
-				<!-- Differents activities in a scroll menu -->
-				<select class="label" name="name">
-					<option value="0"></option>
-					<option value="1">Bowling</option>
-					<option value="2">Afterwork</option>
-					<option value="3">Golf</option>
-					<option value="4">Laser game</option>
-					<option value="5">Basketball</option>
-					<option value="6">Football</option>
-				</select><br>
-				<!-- Label for the date free -->
-				<label for="disponibility">Select the date when you're free</label>
-				<!-- Differents dates proposed for the activity selected -->
-				<select class="label" name="disponibility">
-					<option value="0"></option>
-					<option value="1">2017/04/20</option>
-					<option value="2">2017/04/24</option>
-				</select><br>
-				<!-- Label for the time slot -->
-				<label for="time">Select your time slot</label>
-				<!-- Differents times proposed for the activity selected for the date selected -->
-				<select class="label" name="time">
-					<option value="0"></option>
-					<option value="1">10:20:00 pm to 12:00:00 pm</option>
-				</select><br>
-				<!-- A button to vote for the activity selected with date and time prefered -->
-				<input type="submit" id="submit" name="submit" value="Vote for this activity">
-			</form>
+		<div id="calendar">
+			<img src="../Images/calendar.png" alt="Calendar of April"><br>
+			<a href="../Event_Creation/Event_Creation.html"><button type="button" class="button">Create an event</button></a>
+			<a href="../Vote's_page/Vote's_page.html"><button type="button" class="button">Vote for a proposition of an event</button>
 		</div>
 
 	    <!-- Add a footer for the page -->
