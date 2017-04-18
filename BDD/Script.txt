@@ -1,0 +1,168 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: Gallery
+#------------------------------------------------------------
+
+CREATE TABLE Gallery(
+        idPics  int (11) Auto_increment  NOT NULL ,
+        picUrl  Varchar (255) NOT NULL ,
+        datePic Date NOT NULL ,
+        likePic Int ,
+        idUser  Int NOT NULL ,
+        idAct   Int ,
+        PRIMARY KEY (idPics )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Comment
+#------------------------------------------------------------
+
+CREATE TABLE Comment(
+        idComment int (11) Auto_increment  NOT NULL ,
+        Com       Varchar (255) NOT NULL ,
+        idPics    Int NOT NULL ,
+        idUser    Int NOT NULL ,
+        PRIMARY KEY (idComment )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Users
+#------------------------------------------------------------
+
+CREATE TABLE Users(
+        idUser     int (11) Auto_increment  NOT NULL ,
+        Password   Varchar (255) NOT NULL ,
+        Lastname   Varchar (255) ,
+        Firstname  Varchar (255) ,
+        Mail       Varchar (255) NOT NULL ,
+        Status     Bool NOT NULL ,
+        ProfilePic Varchar (255) ,
+        Studies    Varchar (255) NOT NULL ,
+        PRIMARY KEY (idUser )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Activities
+#------------------------------------------------------------
+
+CREATE TABLE Activities(
+        idAct            int (11) Auto_increment  NOT NULL ,
+        actName          Varchar (255) NOT NULL ,
+        validationAct    Bool NOT NULL ,
+        actLocation      Varchar (255) NOT NULL ,
+        actPrice         Int ,
+        actDate          Datetime NOT NULL ,
+        actDisponibility Int ,
+        Vote             Int ,
+        PRIMARY KEY (idAct )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Product
+#------------------------------------------------------------
+
+CREATE TABLE Product(
+        idProduct int (11) Auto_increment  NOT NULL ,
+        Object    Varchar (255) NOT NULL ,
+        prodPrice Int NOT NULL ,
+        Amount    Int NOT NULL ,
+        Size      Varchar (25) ,
+        prodPic   Varchar (255) NOT NULL ,
+        PRIMARY KEY (idProduct )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table:  Purchase history
+#------------------------------------------------------------
+
+CREATE TABLE Purchase_history(
+        idPurchase     int (11) Auto_increment  NOT NULL ,
+        Buyer          Varchar (255) NOT NULL ,
+        totalCost      Int NOT NULL ,
+        dateOfPurchase Datetime NOT NULL ,
+        product        Varchar (255) NOT NULL ,
+        amount         Int NOT NULL ,
+        PRIMARY KEY (idPurchase )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: subscribe
+#------------------------------------------------------------
+
+CREATE TABLE subscribe(
+        idAct  Int NOT NULL ,
+        idUser Int NOT NULL ,
+        PRIMARY KEY (idAct ,idUser )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: purchase
+#------------------------------------------------------------
+
+CREATE TABLE purchase(
+        idUser    Int NOT NULL ,
+        idProduct Int NOT NULL ,
+        PRIMARY KEY (idUser ,idProduct )
+)ENGINE=InnoDB;
+
+ALTER TABLE Gallery ADD CONSTRAINT FK_Gallery_idUser FOREIGN KEY (idUser) REFERENCES Users(idUser);
+ALTER TABLE Gallery ADD CONSTRAINT FK_Gallery_idAct FOREIGN KEY (idAct) REFERENCES Activities(idAct);
+ALTER TABLE Comment ADD CONSTRAINT FK_Comment_idPics FOREIGN KEY (idPics) REFERENCES Gallery(idPics);
+ALTER TABLE Comment ADD CONSTRAINT FK_Comment_idUser FOREIGN KEY (idUser) REFERENCES Users(idUser);
+ALTER TABLE subscribe ADD CONSTRAINT FK_subscribe_idAct FOREIGN KEY (idAct) REFERENCES Activities(idAct);
+ALTER TABLE subscribe ADD CONSTRAINT FK_subscribe_idUser FOREIGN KEY (idUser) REFERENCES Users(idUser);
+ALTER TABLE purchase ADD CONSTRAINT FK_purchase_idUser FOREIGN KEY (idUser) REFERENCES Users(idUser);
+ALTER TABLE purchase ADD CONSTRAINT FK_purchase_idProduct FOREIGN KEY (idProduct) REFERENCES Product(idProduct);
+
+
+#------------------------------------------------------------
+# Remplissage de la BDD
+#------------------------------------------------------------
+
+#----------Users--------------
+
+INSERT INTO `users` (`idUser`, `Password`, `Lastname`, `Firstname`, `Mail`, `Status`, `ProfilePic`, `Studies`) 
+VALUES (NULL, 'nicobde', 'Pelaud', 'Nicolas', 'niicopel@gmail.com', '1', 'http://www.nigloland.fr/assets/medias/personnages/niglo-home.png','EXIA');
+INSERT INTO `users` (`idUser`, `Password`, `Lastname`, `Firstname`, `Mail`, `Status`, `ProfilePic`, `Studies`) 
+VALUES (NULL, 'wiloubde', 'Mussard', 'William', 'wilou@gmail.com', '0', 'https://yt3.ggpht.com/-acer29DJUx4/AAAAAAAAAAI/AAAAAAAAAAA/-XSXYKlm24c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg','RH');
+INSERT INTO `users` (`idUser`, `Password`, `Lastname`, `Firstname`, `Mail`, `Status`, `ProfilePic`, `Studies`) 
+VALUES (NULL, 'tomtombde', 'Domingues', 'Thomas', 'tomdom@gmail.com', '1', NULL,'EXIA');
+
+#----------Activities--------------
+
+INSERT INTO `activities` (`idAct`, `actName`, `validationAct`, `actLocation`, `actPrice`, `actDate`, `actDisponibility`, `Vote`) 
+VALUES (NULL, 'Laser Game', '0', 'Saran', '5', '2017-04-24 17:00:00', '20', NULL);
+INSERT INTO `activities` (`idAct`, `actName`, `validationAct`, `actLocation`, `actPrice`, `actDate`, `actDisponibility`, `Vote`) 
+VALUES (NULL, 'Course à pied', '0', 'Orléans', NULL, '2017-04-23 9:00:00', NULL, NULL);
+
+#----------Product--------------
+
+INSERT INTO `product` (`idProduct`, `Object`, `prodPrice`, `Amount`, `Size`, `prodPic`) 
+VALUES (NULL, 'Mug', '5', '15', 'NULL', '\Image\mug.png');
+INSERT INTO `product` (`idProduct`, `Object`, `prodPrice`, `Amount`, `Size`, `prodPic`) 
+VALUES (NULL, 'hoodie', '20', '10', 'S', '\Image\hoodie.png');
+INSERT INTO `product` (`idProduct`, `Object`, `prodPrice`, `Amount`, `Size`, `prodPic`) 
+VALUES (NULL, 'keychain', '10', '10', 'NULL', '\Image\keychain.jpg');
+INSERT INTO `product` (`idProduct`, `Object`, `prodPrice`, `Amount`, `Size`, `prodPic`) 
+VALUES (NULL, 'tshirt', '20', '20', 'S', '\Image\tshirt.jpg');
+
+#----------Gallery--------------
+
+INSERT INTO `gallery` (`idPics`, `picUrl`, `datePic`, `likePic`, `idUser`, `idAct`) 
+VALUES (NULL, 'http://blog.imsolutions.fr/wp-content/uploads/2012/12/logo-laser-game-evolution-laser-game-evolution-14110183849.jpg', '2017-04-13', NULL, '1', '1');
+
+#----------Comment--------------
+
+INSERT INTO `comment` (`idComment`, `Com`, `idPics`, `idUser`) 
+VALUES (NULL, 'Cool', '1', '2');
