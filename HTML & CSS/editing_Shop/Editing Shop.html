@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Definition of character used -->
+	<meta charset="utf-8">
+<!-- Add a title to the page -->
+	<title>BDE Cesi</title>
+<!-- Bond the HTML page to a CSS page -->
+	<link rel="stylesheet" href="style.css">
+<!-- Bond the HTML page to a CSS page which allow to put icon in front of Facebook, Twitter,  YouTube and Cart -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<style>
+.product {
+    width: 60%;
+    height: 500px;
+    border: 5px solid#c2242a;
+    margin-left: 15%;
+}
+.button {
+	  display: inline-block;
+	  padding: 5px 15px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  background-color: #c2242a;
+	  border-radius: 15px;
+}
+.button:hover {background-color: purple}
+
+.button:active {
+  	background-color: purple;
+  	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+}
+
+.tab {
+	  display: inline-block;
+	  padding: 5px 15px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  border-color: 5px #000;
+	  outline: none;
+	  background-color: #c2242a;
+	border: 2px inset black;
+}
+.tab:hover {background-color: purple}
+.tabplace{
+	margin-left: 15%;
+	margin-top: 10%;
+}
+.choise{
+	font-size: 14px;
+}
+.textedd{
+	margin-left: 40%;
+	font-family:arial;
+	font-size: 25px;
+}
+.adpro{
+	margin-left: 5%;
+}
+.posimg1{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.posimg2{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.button2{margin-top: 10%;}
+.button3{margin-top: 5%;}
+.button4{margin-top: 50%;}
+.button5{margin-top: 5%;}
+.posmenu1{
+	margin-top: 10%;
+}
+.posmenu2{
+	margin-top: 350%;
+}
+.desc2{
+	margin-top: 40%;
+}
+
+@media all and (max-width: 1181px) {
+	/* Reduce the font size of the navigation elements of the shop's page */
+	.button{
+		font-size: 14px;
+	}
+	.obj1{
+		width:100px; 
+		height:100px;
+		margin-top: 10%;
+	}
+	.obj2{
+		width:100px; 
+		height:100px;
+		margin-top: 10%;
+	}
+	.choise{
+		font-size: 13px;
+		margin-top: 10%;
+	}
+	.posmenu{
+		font-size: 12px;
+	}
+	.posmenu1{
+		margin-top: 200%;
+	}	
+	.posbutton{
+		margin-top: 10%;
+	}
+}
+@media all and (max-width: 979px) {
+	/* Reduce the font size of the navigation elements of the shop's page */
+	.choise{
+		font-size: 11px;
+		margin-top: 10%;
+	}
+	.posmenu1{
+		margin-top: 150%;
+	}
+
+}
+@media all and (max-width: 864px) {
+	/* Reduce the font size of the navigation elements of the shop's page */
+.textedd{
+	margin-left:35%;
+	font-size: 20px;
+	}
+.choise{
+		font-size: 9px;
+		margin-top: 10%;
+	}
+.obj2{
+	margin-top: 20%;
+	}
+.desc2{
+	margin-top: 70%;
+}
+.posmenu2{
+	margin-top: 400%;
+}
+@media all and (max-width: 771px) {
+.obj1{
+		width:75px; 
+		height:75px;
+	}
+.obj2{
+		width:75px; 
+		height:75px;
+		margin-top: 30%;
+	}
+}
+@media all and (max-width: 771px) {
+	.tab{
+		font-size:11px;
+	}
+	.choise{
+		font-size:8px;
+		margin-top: 30%;
+	}
+	.posbutton{
+		margin-top: 20%;
+	}
+	.posmenu{
+		margin-top: 10%;
+	}
+	.obj1{
+		margin-top: 30%;
+	}
+	.adpro{
+		margin-top:5%;
+	}
+}
+@media all and (max-width: 664px) {
+	.product {
+    width: 400px;
+	}
+}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+			<!-- Create a block of elements -->
+			<div id="red_bar">
+
+					<img src="logo.png" alt="Logo of Exia CESI">
+
+					<nav>
+                        <!-- Links with same properties thanks to the attribute "class" -->
+                        <a href="../Gallery_Users/gallery_users.html" class="selected">Gallery</a>
+                        <a href="../Agenda's_page/Agenda's_page.html" class="selected">Schedule</a>
+                        <a href="../Shop/Shop.html" class="selected">Shop</a>
+                        <a href="../Pinned_Gallery/pinned_gallery.html" class="selected">Pinned pictures</a>
+                    </nav>
+
+                    <a href="../homepage/homepage.html" id="logout" class="log">Log out</a>
+                    <a href="../Profile's_page/Profile's_page.html" class="log">Your account</a>
+
+            </div>
+
+            <div id="white_bar">
+                    <nav>
+                        <a href=""><i class="fa fa-facebook-square"></i>&nbsp Facebook</a>
+                        <a href=""><i class="fa fa-twitter-square"></i>&nbsp Twitter</a>
+                        <a href=""><i class="fa fa-youtube-square"></i>&nbsp Youtube</a>
+                        <a href="../Pannier's_page/Pannier's_page.html"><i class="fa fa-shopping-cart"></i>&nbsp Cart</a>
+                    </nav>
+
+			</div>
+
+</header>
+<div class="tabplace">
+<nav>
+	<a href="#" class="tab" style="color:#fff">T-shirts</a>
+	<a href="#" class="tab" style="color:#fff">Mugs</a>
+	<a href="#" class="tab" style="color:#fff">Keychains</a>
+	<a href="#" class="tab" style="color:#fff">Hoodies</a>
+</nav>
+</div>
+<div class="product">
+	<div class="textedd">
+		<a>Shop Editing</a>
+	</div>
+	<div class="adpro">
+		<a href="#" class="button" style="color:#fff">Add a product</a>
+	</div>
+	
+	<div style ="margin-right: 5%;">
+	<span class="posbutton" style="float: right;">
+		<div class="button2">
+		<a href="#" class="button" style="color:#fff">Edit</a>
+		</div>
+		<div class="button3">
+		<a href="#" class="button" style="color:#fff">Remove</a></br></br></br></br>
+		</div>
+		<div class="button4">
+		<a href="#" class="button" style="color:#fff">Edit</a>
+		</div>
+		<div class="button5">
+		<a href="#" class="button" style="color:#fff">Remove</a>
+		</div>
+	</span>
+	<div  style ="margin-right: 30%;">
+	<span class="posmenu" style="float: right;">
+		<div class="posmenu1">
+		Size 
+			<FORM>
+		    <SELECT name="size" size="1">
+		    <OPTION>S
+		    <OPTION>M
+		    <OPTION>L
+		    <OPTION>X
+		    </SELECT>
+		    </FORM>
+		</div>
+		<div class="posmenu2">
+		Size 
+			<FORM>
+		    <SELECT name="size" size="1">
+		    <OPTION>S
+		    <OPTION>M
+		    <OPTION>L
+		    <OPTION>X
+		    </SELECT>
+		    </FORM></br>
+		</div>
+	</span>
+	<div class="postext" style ="margin-right: 10%;">
+	<span class= "choise" style="float: right;">
+	<div class= "desc1">
+	<h1>BDE T-shirt RH</h1></br>
+	Price : 25 euros</br>
+	Description : .................
+	</div>
+	<div class= "desc2">
+	<h1>BDE T-shirt EXIA</h1></br>
+	Price : 25 euros</br>
+	Description : .................
+	</div>
+	</span>
+	<div class ="posimg1">
+		<img class="obj1" src="blabla.png" width="150px" height="150px"/>
+	</div>
+	<div class ="posimg2">
+		<img class="obj2" src="blabla2.png" width="150px" height="150px"/>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- Add a footer for the page -->
+	    <footer>
+	        <!-- Link to send a mail to the webmaster -->
+	    	<a href="mailto:">Contact</a>
+	        <!-- Link to see the condition of use -->
+	    	<a class="links" href="">Condition of use</a>
+	        <!-- Link to see the privacy notice -->
+	    	<a class="links" href="">Privacy notice</a>
+	        <!-- Link to get help -->
+	    	<a class="links" href="">Help</a>
+	        <!-- End of the footer -->
+	    </footer>
+</body>
+</html>

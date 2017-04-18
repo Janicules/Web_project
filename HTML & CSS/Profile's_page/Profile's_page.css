@@ -1,0 +1,347 @@
+/* Template to initiate a CSS file (from line 2 to 43) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Properties of the body : he'll perfectly frame the elements */
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 1.3rem;
+	font-family: arial,ssans,sans-serif;
+	background-image: url("../Images/bde.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#PP{
+	width: 100px;
+	height: 100px;
+}
+
+#header{
+	font:13px Arial, Helvetica, sans-serif;
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#header img{
+	float: left;
+	max-width: 100px;
+	max-height: 100px;
+	margin-top: -5px;
+
+}
+
+/* The first bar */
+
+#red_bar{
+	background-color: #c2242a;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+/* Link if the red bar properties */
+#red_bar a {
+	color: #ffffff ;
+	text-decoration: none;
+}
+
+/* Navigation elements in the red bar properties */
+#red_bar nav {
+	font:14px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: left;
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+
+/* Links in the navigation elements in the red bar properties */
+#red_bar nav a{
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0.9;
+	text-decoration:none;
+	line-height: 1;
+}
+
+/* When we hover the links in the navigation elements in the red bar properties */
+#red_bar nav a:hover {
+	background-color: rgba(0,0,0, 0.6);	
+}
+
+/* The class "selected" in the red bar properties */
+#red_bar .selected {
+	border-radius: 2px;
+	background-color:#6d2525 /*#325d77*/;
+	padding: 8px 12px;
+}
+
+/* The class "log" properties */
+.log {
+	font-size: 13px;
+	font-weight: bold;
+	float: right;
+	border-radius: 3px;
+	background-color: rgba(58, 60, 62, 0);
+	height: 40px;
+	padding: 0 20px;
+	border: 1px solid #ffffff;
+	line-height: 40px;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+/* Second Bar */
+
+#white_bar {
+	background-color: rgba(255,255,255,0);
+	box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0);
+	padding: 20px 40px;
+}
+
+/* Navigation elements in the white bar properties */
+#white_bar nav {
+	text-align: right;
+	line-height: 20px;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Links in the navigation elements in the white bar properties */
+#white_bar nav a {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* The class "fa" properties */
+.fa {
+	color: #000000;
+	margin: 0 4px 0 15px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.links{
+	margin-left: 50px;
+}
+
+article{
+	text-align: center;
+	margin-top: 50px;
+	height: 400px;
+}
+.button2{
+	float: right;
+	margin-right: 25%;
+}
+
+/* Responsive if the window's width is below 829px */
+@media all and (max-width: 829px) {
+	/* Reduce the font size of the navigation elements in the white bar */
+	#white_bar nav{
+		font-size:14px;
+	}
+	#red_bar{
+		height: 100px;
+	}
+
+	#logout{
+		margin-top: 40px;
+	}
+}
+
+/* Responsive if the window's width is below 693px */
+@media all and (max-width: 693px) {
+	#logout{
+		margin-top: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 599px */
+@media all and (max-width: 599px) {
+	#red_bar{
+		padding:20px 0;
+		height: 126px;
+	}
+
+	body{
+		font-size: 1rem;
+	}
+	#header img{
+		float: right;
+	}
+
+	#red_bar nav{
+		margin-left: 40px;
+		padding-top: 26px;
+	}
+
+	#logout{
+		margin-top: 66px;
+		margin-right: -90px;
+	}
+}
+
+/* Responsive if the window's width is below 504px */
+@media all and (max-width: 504px) {
+	#red_bar nav{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#logout{
+		margin-top: 19px;
+		margin-right: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 467px */
+@media all and (max-width: 466px) {
+
+	#red_bar{
+		height: 126px;
+	}
+
+	article{
+		height: 300px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	body{
+		font-size: 10px;
+	}
+
+	.log{
+		font-size: 10px;
+		margin-top: 1px;
+	}
+
+	#header img{
+		float: right;
+	}
+
+	#red_bar nav {
+		margin: 0;
+		font-size:10px;
+		margin-top: 0px;
+	}
+
+	.selected {
+		padding: 5px 8px;
+	}
+
+	#white_bar{
+		padding: 20px 0px 0px 0px;
+		height: 50px;
+	}
+
+	#white_bar nav{
+		text-align: center;
+	}
+
+	#white_bar nav a{
+		display: inline;
+		padding: 8px;
+		font-size: 10px;
+	}
+
+	.button2{
+		margin-right: 15%;
+	}
+
+	article button{
+		margin-right: 10%;
+		font-size: 10px;
+	}
+
+	.fa{
+		margin-left:0;
+	}
+
+	footer{
+		margin-top: 0px;
+	}
+
+	.links{
+		margin-left: 20px;
+	}
+
+	#PP{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* Responsive if the window's width is below 379px */
+@media all and (max-width: 379px) {
+	#red_bar{
+		height: 146px;
+	}
+
+	#red_bar nav {
+		margin-top: -2px;
+		padding-top: 0px;
+	}
+
+	#logout{
+		margin-top: 39px;
+	}
+}
+
+/* Responsive if the window's width is below 366px */
+@media all and (max-width: 366px) {
+	#logout{
+		margin-top: 1px;
+	}
+}

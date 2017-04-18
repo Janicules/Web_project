@@ -1,0 +1,126 @@
+<!-- Creation of a HTML document -->
+<!DOCTYPE html>
+<!-- Opening the HTML markup -->
+<html>
+
+    <!-- Metadata page  -->
+    <head>
+        <!-- Definition of character used -->
+        <meta charset="utf-8" />
+        <!-- Adds a title to the page -->
+        <title>BDE CESI</title>
+        <!-- Bonds the HTML page to a CSS page -->
+        <link rel="stylesheet" href="Createaccount.css" />
+        <!-- Bonds the HTML page to a CSS page which allow to put icon in front of Facebook, Twitter,  YouTube and Cart -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- End of the metadata page  -->
+
+
+    </head>
+
+    <body>
+
+        <header id="header">
+            <!-- Creates a block of elements -->
+            <div id="red_bar">
+            
+            </div>
+            <!-- Creates a block containing facebook, twitter and youtube links -->
+            <div id="white_bar">
+                    <nav>
+                        <a href=""><i class="fa fa-facebook-square"></i>&nbsp Facebook</a>
+                        <a href=""><i class="fa fa-twitter-square"></i>&nbsp Twitter</a>
+                        <a href=""><i class="fa fa-youtube-square"></i>&nbsp Youtube</a>
+                        
+                    </nav>
+
+            </div>
+
+        </header>
+        
+        <!-- Positioning the CESI logo -->
+        <p id="pcesi">
+        <img src="../Images/logopng.png" id="logocesi" alt="logo du CESI">
+        </p><br>
+        <!-- Creates a block containing all the div about the sign up information -->
+        <div id="mainframe">
+            <form id="login" action="createanaccount.php" method="post">
+                <h2 id="title2">
+                Create an account
+                </h2> <br>
+                <div id="formdiv">
+                        <label for="fname">First name</label>
+                <!-- Creates a textbox to enter one's first name--> 
+                        <input type="text" maxlength="50" id="fname" name="fname"> <br><br>
+
+                    
+                        <label for="lname">Last name</label>       
+                <!-- Creates a textbox to enter one's last name -->
+                        <input type="text" maxlength="50" id="lname" name="lname"><br><br>
+
+              
+                        <label for="account">E-mail</label> 
+                <!-- Creates a textbox to enter one's email address--> 
+                        <input type="mail" maxlength="50" id="account" name="account"><br><br>
+                    
+           
+                        <label for="password">Password</label>   
+                <!-- Creates a textbox to enter one's password -->
+                        <input type="password" id="password" name="password"><br><br>
+                    
+
+                        <label for="password2">Confirm your password</label> 
+                <!-- Creates a textbox to enter one's password -->
+                        <input type="password" id="password2" name="password2"><br><br><br>
+
+                    
+                        <label for="studies">Studies :</label><select name="studies">
+                                                    <option value="1">EXIA</option>
+                                                    <option value="2">RH</option>
+                                                    <option value="3">RRH</option>
+                                                    <option value="4">GMSI</option>
+                                                    <option value="5">QSE</option>
+                                                    <option value="6">RAGPI</option>
+                                                </select><br><br><br>
+
+                        <label for="image">Select a picture</label> 
+                        <input type="file" name="img" class="selectpic">
+                </div><br><br><br>
+            
+            <!-- Creates a clickable button for the user to log in -->
+                <button class="button" type="submit">Create your BDE account!</button> 
+                </form><br><br>
+
+            <!-- Works a splitter img into the frame to split the login part from the account creation part-->
+                <div class="hsplit">
+                    <img src="../Images/hsplitter.png" id="hsplitter" alt="Splitter">
+                </div> 
+            
+                <div class="divtitle">
+                    <h2 id="title3">Already have an account?</h2>
+                </div>
+
+                <div class="divcreate">
+                    <a href="" id="">Sign in!</p></a>
+                </div>
+            </div>
+            
+
+            
+
+        <!-- Add a footer for the page -->
+        <footer>
+            <!-- Link to send a mail to the webmaster -->
+            <a href="mailto:">Contact</a>
+            <!-- Link to see the condition of use -->
+            <a class="links" href="">Condition of use</a>
+            <!-- Link to see the privacy notice -->
+            <a class="links" href="">Privacy notice</a>
+            <!-- Link to get help -->
+            <a class="links" href="">Help</a>
+            <!-- End of the footer -->
+        </footer>
+    <!-- End of the corpse of the page -->
+    </body>
+<!-- Closing the html markup -->
+</html>
