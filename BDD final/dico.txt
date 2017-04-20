@@ -1,0 +1,212 @@
+Dictionnaire de données 
+
+
+Name: idPics
+Type : Auto_increment
+Size : 11,0
+ 
+
+Name: picUrl
+Type : Varchar
+Size : 255,0
+
+
+Name: datePic
+Type : Date
+Size : 255,0
+ 
+
+Name: picLocation
+Type : Varchar
+Size : 255,0
+ 
+
+Name: likePic
+Type : Int
+Size : 255,0
+ 
+
+Name: idAct
+Type : Auto_increment
+Size : 25,0
+ 
+
+Name: actName
+Type : Varchar
+Size : 255,0
+
+Name: idcart
+Type : Auto_increment
+Size : 25,0
+
+Name: cartName
+Type : Varchar
+Size : 255,0
+
+Name: cartProdPrice
+Type : Int
+Size : 255,0
+
+Name: cartAmount
+Type : Int
+Size : 255,0
+ 
+
+Name: mail
+Type : Varchar
+Size : 255,0
+ 
+
+Name: actLocation
+Type : Varchar
+Size : 255,0
+ 
+
+Name: actPrice
+Type : Int
+Size : 255,0
+ 
+
+Name: actDate
+Type : Date
+Size : 255,0
+
+Name: actTime
+Type : Time
+Size : 255,0
+ 
+
+Name: actDisponibility
+Type : Int
+Size : 255,0
+ 
+
+Name: Vote
+Type : Int
+Size : 255,0
+ 
+
+Name: iduser
+Type : Auto_increment
+Size : 11,0
+ 
+
+Name: password
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Lastname
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Firstname
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Mail
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Status
+Type : Bool
+Size : 25,0
+ 
+
+Name: ProfilePic
+Type : Varchar
+Size : 255,0
+ 
+
+Name: idComment
+Type : Auto_increment
+Size : 11,0
+ 
+
+Name: Com
+Type : Text
+Size : 255,0
+ 
+
+Name: idProduct
+Type : Auto_increment
+Size : 25,0
+ 
+
+Name: Name
+Type : Varchar
+Size : 255,0
+
+
+Name: Category
+Type : Varchar
+Size : 255,0 
+
+
+Name: ProdPrice
+Type : Int
+Size : 25,0
+ 
+
+Name: Amount
+Type : Int
+Size : 25,0
+
+Name: prodPic
+Type : Varchar
+Size : 255,0
+ 
+
+Name: idPurchase
+Type : Auto_increment
+Size : 11,0
+ 
+
+Name: Historique
+Type : Varchar
+Size : 255,0
+ 
+
+Name: totalCost
+Type : Int
+Size : 255,0
+ 
+
+Name: dateOfPurchase
+Type : Datetime
+Size : 255,0
+ 
+
+Name: product
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Size
+Type : Varchar
+Size : 25,0
+ 
+
+Name: Studies
+Type : Varchar
+Size : 255,0
+ 
+
+Name: Com
+Type : Varchar
+Size : 255,0
+ 
+
+Name: actDate
+Type : Datetime
+Size : 255,0
+ 
+
+Name: Buyer
+Type : Varchar
+Size : 255,0
+ 
+
