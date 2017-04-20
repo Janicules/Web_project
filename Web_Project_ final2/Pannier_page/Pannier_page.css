@@ -1,0 +1,591 @@
+/* Template to initiate a CSS file (from line 2 to 43) */
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Properties of the body : he'll perfectly frame the elements */
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 1.3rem;
+	font-family: arial,ssans,sans-serif;
+	background-image: url("../Images/bde.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#header{
+	font:13px Arial, Helvetica, sans-serif;
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#header img{
+	float: left;
+	max-width: 100px;
+	max-height: 100px;
+	margin-top: -5px;
+
+}
+
+/* The first bar */
+
+#red_bar{
+	background-color: #c2242a;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+/* Link if the red bar properties */
+#red_bar a {
+	color: #ffffff ;
+	text-decoration: none;
+}
+
+/* Navigation elements in the red bar properties */
+#red_bar nav {
+	font:14px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: left;
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+
+/* Links in the navigation elements in the red bar properties */
+#red_bar nav a{
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0#9;
+	text-decoration:none;
+	line-height: 1;
+}
+
+/* When we hover the links in the navigation elements in the red bar properties */
+#red_bar nav a:hover {
+	background-color: rgba(0,0,0, 0.6);	
+}
+
+/* The class "selected" in the red bar properties */
+#red_bar .selected {
+	border-radius: 2px;
+	background-color:#6d2525 /*#325d77*/;
+	padding: 8px 12px;
+}
+
+/* The class "log" properties */
+.log {
+	font-size: 13px;
+	font-weight: bold;
+	float: right;
+	border-radius: 3px;
+	background-color: rgba(58, 60, 62, 0);
+	height: 40px;
+	padding: 0 20px;
+	border: 1px solid #ffffff;
+	line-height: 40px;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+/* Second Bar */
+
+#white_bar {
+	background-color: rgba(255,255,255,0);
+	box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0#05);
+	padding: 20px 40px;
+}
+
+/* Navigation elements in the white bar properties */
+#white_bar nav {
+	text-align: right;
+	line-height: 20px;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Links in the navigation elements in the white bar properties */
+#white_bar nav a {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* The class "fa" properties */
+.fa {
+	color: #000000;
+	margin: 0 4px 0 15px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 80px;
+}
+
+.links{
+	margin-left: 50px;
+}
+
+#para{
+	margin-left: 13%;
+}
+
+#my_cart{
+	border-style: solid;
+	border-width: 3px;
+	width: 75%;
+	margin: auto;
+}
+
+#my_cart img{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+span{
+	width: 100%;
+}
+
+.product{
+	display: flex;
+	width: 100%;
+	margin: 50px 0px 20px 50px;
+}
+
+.form{
+	float: left;
+	height: 23px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.carac{
+	width: 30%;
+	text-align: center;
+	float: left;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.price{
+	float: left;
+	width: 25%;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.desc{
+	float: left;
+	width: 70%;
+	height: 40px;
+	margin-left: 20px;
+}
+
+.button{
+	float: right;
+	margin-right : 100px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#total{
+	text-align: right;
+	margin-bottom: 50px;
+	margin-right: 100px;
+}
+
+#product{
+	width: 60%;
+	border-right-style: double;
+	border-width: 6px;
+}
+
+#paypal{
+	width: 35%;
+	height: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.pannier{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#form_pay{
+	margin-top: 50px;
+}
+
+#account{
+	margin-bottom: 20px;
+}
+
+#password{
+	margin-bottom: 70px;
+}
+
+#checkout{
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+#valid{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+#valid button{
+	margin-top: 100px;
+}
+ a {
+ 	color: blue;
+ }
+/* Responsive if the window's width is below 1042px */
+@media all and (max-width: 1042px) {
+	#my_cart{
+		font-size: 1rem;
+	}
+
+	.from{
+		margin-left: 10px;
+	}
+
+	.carac{
+		margin-left: 10px;
+	}
+
+	.price{
+		margin-left: 10px;
+	}
+
+	.button{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+/* Responsive if the window's width is below 850px */
+@media all and (max-width: 850px) {
+	.carac{
+		margin-top: 60px;
+		margin-left: -50px;
+		font-weight: bold;
+	}
+
+	.button{
+		float: inherit;
+		margin: 0px 0px 0px 60px;
+	}
+}
+
+/* Responsive if the window's width is below 829px */
+@media all and (max-width: 829px) {
+	/* Reduce the font size of the navigation elements in the white bar */
+	#white_bar nav{
+		font-size:14px;
+	}
+	#red_bar{
+		height: 100px;
+	}
+
+	#logout{
+		margin-top: 40px;
+	}
+
+}
+
+/* Responsive if the window's width is below 788px */
+@media all and (max-width: 788px) {
+	.button{
+		margin-left: -30px;
+		margin-top: 50px;
+	}
+}
+
+/* Responsive if the window's width is below 700px */
+@media all and (max-width: 700px) {
+	#paypal{
+		float: inherit;
+		margin: 0 auto 20px auto;
+		width: 80%;
+		border-top-style: double;
+		border-width: 6px;
+	}
+
+	#product{
+		width: 100%;
+		border-right-style: inherit;
+		border-width: inherit;
+	}
+
+	#product1, #product2, #product3{
+		width: 90%;
+	}
+	.carac{
+		margin: 20px 0px 0px 10px;
+	}
+
+	.price{
+		margin-left: 20px;
+	}
+}
+
+/* Responsive if the window's width is below 693px */
+@media all and (max-width: 693px) {
+	#logout{
+		margin-top: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 599px */
+@media all and (max-width: 599px) {
+	#red_bar{
+		padding:20px 0;
+		height: 126px;
+	}
+
+	body{
+		font-size: 1rem;
+	}
+	#header img{
+		float: right;
+	}
+
+	#red_bar nav{
+		margin-left: 40px;
+		padding-top: 26px;
+	}
+
+	#logout{
+		margin-top: 66px;
+		margin-right: -90px;
+	}
+}
+
+/* Responsive if the window's width is below 566px */
+@media all and (max-width: 566px) {
+	.carac{
+		margin-top: 60px;
+		margin-left: -50px;
+		font-weight: bold;
+	}
+}
+
+/* Responsive if the window's width is below 504px */
+@media all and (max-width: 504px) {
+	#red_bar nav{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#logout{
+		margin-top: 19px;
+		margin-right: 0px;
+	}
+}
+
+/* Responsive if the window's width is below 486px */
+@media all and (max-width: 486px) {
+	body{
+		font-size: 10px;
+	}
+
+	#red_bar{
+		height: 126px;
+	}
+
+	#header img{
+		float: right;
+	}
+
+	.selected {
+		padding: 5px 8px;
+	}
+
+	#white_bar{
+		padding: 20px 0px 0px 0px;
+		height: 50px;
+	}
+
+	#white_bar nav{
+		text-align: center;
+	}
+
+	#logout{
+		margin-top: 66px;
+		margin-right: -80px;
+	}
+
+	#red_bar nav {
+		margin: 0;
+		font-size: 10px;
+		margin-top: 0px;
+	}
+
+	.log{
+		font-size: 10px;
+		margin-top: 0px;
+	}
+
+	#white_bar nav a{
+		display: inline;
+		padding: 8px;
+		font-size: 10px;
+	}
+
+	footer{
+		margin-top: 20px;
+	}
+
+	.links{
+		margin-left: 20px;
+	}
+
+
+	.fa{
+		margin-left:0;
+	}
+
+	#my_cart{
+		font-size: 10px;
+	}
+
+	.button{
+		font-size: 10px;
+	}
+
+	#product1{
+		margin: 10px 0px 10px 50px;
+	}
+
+	#product2{
+		margin: 10px 0px 10px 50px;
+	}
+
+	#product3{
+		margin: 10px 0px 10px 50px;
+	}
+
+	#para{
+		font-size: 1rem;
+	}
+
+	#total{
+		margin-bottom: 30px;
+	}
+
+	#form_pay{
+		margin-top: 30px;
+	}
+
+	#password{
+		margin-bottom: 30px;
+	}
+
+	#submit{
+		font-size: 10px;
+	}
+}
+
+/* Responsive if the window's width is below 403px */
+@media all and (max-width: 403px) {
+	#logout{
+		margin-right: 0px;
+		margin-top: 19px;
+	}
+}
+
+/* Responsive if the window's width is below 395px */
+@media all and (max-width: 395.5px) {
+	#red_bar{
+		height: 148px;
+	}
+
+	#red_bar nav{
+		padding-top: 0px;
+	}
+
+	#logout{
+		margin-top: 41px;
+	}
+
+	#my_cart img{
+		width: 50px;
+		height: 50px;
+		margin-top: 40px;
+	}
+
+	#product1, #product2, #product3{
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	.log{
+		margin-top: 1px;
+	}
+}
+
+/* Responsive if the window's width is below 383px */
+@media all and (max-width: 383px) {
+	#logout{
+		margin-top: 1px;
+	}
+}
+
+
+
+/* Responsive if the window's width is below 366px */
+@media all and (max-width: 366px) {
+	#logout{
+		margin-top: 1px;
+	}
+}
